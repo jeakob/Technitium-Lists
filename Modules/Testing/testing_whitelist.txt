@@ -1,0 +1,51 @@
+# Testing Rules - 2024-09-03 12:43:25 +1000
+
+# Tech
+@@|darkreader.org^$important
+
+# Shopping
+@@|assets.target.com.au^$important
+
+# Google
+@@|yt3.googleusercontent.com^$important
+
+# EBay
+@@|cart.ebay.com.au^$important
+@@|order.ebay.com.au^$important
+@@|pay.ebay.com.au^$important
+@@|vod.ebay.com.au^$important
+
+# Security
+@@|7-zip.org^$important
+@@|buy-download.norton.com^$important
+@@|laptop-updates.brave.com^$important
+@@|login.norton.com^$important
+@@|now.symassets.com^$important
+@@|support.norton.com^$important
+@@|vss.norton.com^$important
+@@|www.norton.com^$important
+
+# Media
+@@|jeremylee.sh^$important
+@@|mkvtoolnix.download^$important
+# Tech
+@@|searchapi.samsung.com^$important
+
+# Linux
+@@|packages.ubuntu.com^$important
+@@|screenshots.debian.net^$important
+# Development
+@@|material-theme.site^$important
+# Google
+@@|myadcenter.google.com^$important
+# Games
+@@|cortex.razer.com^$important
+@@|deals-assets-cdn.razerzone.com^$important
+@@|deals-images-cdn.razerzone.com^$important
+@@|deals.razer.com^$important
+@@|kinesis.us-east-1.amazonaws.com^$important
+@@|maxine.s3.amazonaws.com^$important
+@@|maxineapi.razersynapse.com^$important
+# Tech
+@@|forum.vivaldi.net^$important
+@@|login.vivaldi.net^$important
