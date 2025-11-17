@@ -1,22 +1,19 @@
-# AdGuard-Home-Whitelist ✅
+# Technitium ✅
 
-![Files](https://img.shields.io/github/directory-file-count/hl2guide/AdGuard-Home-Whitelist?style=for-the-badge)
-![Size](https://img.shields.io/github/repo-size/hl2guide/AdGuard-Home-Whitelist?style=for-the-badge)
-![License](https://img.shields.io/github/license/hl2guide/AdGuard-Home-Whitelist?style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/hl2guide/AdGuard-Home-Whitelist?style=for-the-badge)
-
-- Current Version: 1.2.8.1
-- Last Updated (AEST): 2024-12-08 15:26:00 +1100
+![Files](https://img.shields.io/github/directory-file-count/jeakob/Technitium-Lists?style=for-the-badge)
+![Size](https://img.shields.io/github/repo-size/jeakob/Technitium-Lists?style=for-the-badge)
+![License](https://img.shields.io/github/license/jeakob/Technitium-Lists?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/jeakob/Technitium-Lists?style=for-the-badge)
 
 ## Intro ✍
 
-This is a strict, curated whitelist for [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) with a focus on enforcing privacy and security.
+This is a strict, curated whitelist for [Technitium DNS Server](https://technitium.com/dns/) with a focus on enforcing privacy and security.
 
-It also helps avoid ads, trackers and malware, and blocks tracking and telemetry whenever possible, by default.
+It helps avoid ads, trackers, and malware, and blocks tracking and telemetry whenever possible by default.
 
-__It's a great starting point for people who wish to run AdGuard Home in a strict whitelisting manner.__
+__It's a great starting point for people who wish to run Technitium DNS in a strict whitelisting manner.__
 
-ℹ Please learn [AdGuard Home's interface](https://github.com/AdguardTeam/AdGuardHome/wiki) before using this list.
+ℹ Please familiarize yourself with [Technitium DNS Server](https://technitium.com/dns/) before using this list.
 
 ## Aspects ⏺
 
@@ -34,27 +31,19 @@ __It's a great starting point for people who wish to run AdGuard Home in a stric
 | 📚 Programming Editors | _Visual Studio Code, Visual Studio and VSCodium_ |
 | 🐧 Linux Software | _Fedora, Ubuntu etc_ |
 | 🌏 Internet Browsers | _Firefox, Brave, Vivaldi etc_ |
-| 🏬 Australian specific stores | _JB Hifi, Coles, Woolworths, OfficeWorks etc_ |
-| 🏦 Australian government websites | _Election, tax office etc_ |
-| 💵 Australian banking websites | _NAB, ING Direct Australia etc_ |
 
-and more.. [see whitelist as RAW](https://raw.githubusercontent.com/hl2guide/AdGuard-Home-Whitelist/main/whitelist.txt)
+and more.. [see whitelist as RAW](https://raw.githubusercontent.com/jeakob/Technitium-Lists/main/whitelist.txt)
 
 ### What's __Not__ Whitelisted 🛑
 
-* 🍏 Apple products or services
-* 💭 Social media sites
-* 🛒 Majority of online shopping sites
-* 🙄 Ads, trackers and malware, tracking and telemetry (whenever possible)
-
-🖊 Take the above into account and that fact I live in Australia. The whitelist reflects those facts.
+* 🙄 Ads, trackers and malware, tracking and telemetry (whenever possible)  
 
 👀 Check the whitelist first to see if it suits your needs.
 
 ### Details 🧾
 
-* __Expected AdGuard Home Average RAM Usage:__ around 60MB
-* __Number of Rules:__ over 5800
+* __Expected Technitium DNS Average RAM Usage:__ around 60MB  
+* __Number of Rules:__ over 1,534,106 as of 17/11/2025
 
 ## Updates 👩‍💻
 
@@ -62,5 +51,4 @@ I will update this repo infrequently and sporadically.
 
 ## Usage 💚
 
-See [USAGE.md](https://github.com/hl2guide/AdGuard-Home-Whitelist/blob/main/USAGE.md) for more information.
-
+See [USAGE.md](https://github.com/jeakob/Technitium-Lists/blob/main/USAGE.md) for more information.
