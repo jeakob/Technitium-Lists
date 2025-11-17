@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          # Add files, even if they are new/untracked
+          # Stage both files, even if they are new/untracked
           git add --intent-to-add technitium_blacklist.txt technitium_whitelist.txt
           # Commit only if there are changes
           git commit -m "Update Technitium blocklist/whitelist" || echo "No changes"
