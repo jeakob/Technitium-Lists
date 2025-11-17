@@ -343,7 +343,6 @@ downloads.wisecleaner.com
 driveroff.net
 drupal.org
 dstik9906m659.cloudfront.net
-duckduckgo.com
 dyncdn.me
 dyncdn2.com
 e7641.b.akamaiedge.net
@@ -1252,6 +1251,7 @@ zippyshare.com
 |oempprd.samsungcloudsolution.com
 |eneba-games.sjv.io
 |awstrack.me
+
 
 
 
