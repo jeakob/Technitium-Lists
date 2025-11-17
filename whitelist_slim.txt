@@ -156,7 +156,6 @@ blzmedia-a.akamaihd.net
 blznav.akamaized.net
 bnetproduct-a.akamaihd.net
 bnetshopus.akamaized.net
-brave.com
 brazil.kaspersky.com
 brazzers.com
 bromite.org
@@ -1253,6 +1252,7 @@ zippyshare.com
 |oempprd.samsungcloudsolution.com
 |eneba-games.sjv.io
 |awstrack.me
+
 
 
 
