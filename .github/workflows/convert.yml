@@ -1,15 +1,15 @@
-name: Generate Technitium Blocklist
+name: Generate Combined Technitium Blocklist
+
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 2 * * *'  # Daily at 2 AM UTC
   workflow_dispatch:
   push:
     paths:
-      - 'blocklist.txt'
-      - 'whitelist.txt'
+      - 'blocklist_urls.txt'
 
 jobs:
-  convert:
+  build-blocklist:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,17 +17,18 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Run conversion script
+      - name: Download and combine blocklists
         run: |
-          chmod +x convert-list.sh
-          bash convert-list.sh
+          chmod +x download-and-combine.sh
+          bash download-and-combine.sh
           
-      - name: Commit changes
+      - name: Show statistics
+        run: cat stats.txt
+          
+      - name: Commit combined blocklist
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Update Technitium blocklist/whitelist [skip ci]"
-          file_pattern: 'technitium_blacklist.txt technitium_whitelist.txt'
+          commit_message: "🤖 Update combined Technitium blocklist [skip ci]"
+          file_pattern: 'combined_blocklist.txt stats.txt'
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
-          skip_fetch: false
-          skip_checkout: false
