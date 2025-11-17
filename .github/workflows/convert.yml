@@ -20,7 +20,7 @@ jobs:
       - name: Download and combine blocklists
         run: |
           chmod +x download-and-combine.sh
-          bash download-and-combine.sh
+          bash ./download-and-combine.sh
           
       - name: Show statistics
         run: cat stats.txt
