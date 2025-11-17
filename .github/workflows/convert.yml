@@ -2,7 +2,7 @@ name: Generate Technitium Blocklist
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Runs daily at 02:00 UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up bash
         run: sudo apt-get update && sudo apt-get install -y grep
@@ -22,9 +24,7 @@ jobs:
       - name: Commit updated blocklist/whitelist
         run: |
           git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          # Stage both files, even if they are new/untracked
-          git add --intent-to-add technitium_blacklist.txt technitium_whitelist.txt
-          # Commit only if there are changes
+          git config user.email "github-actions@github-actions[bot].github.com"
+          git add technitium_blacklist.txt technitium_whitelist.txt
           git commit -m "Update Technitium blocklist/whitelist" || echo "No changes"
           git push
