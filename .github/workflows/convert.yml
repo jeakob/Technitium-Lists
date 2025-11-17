@@ -1,13 +1,12 @@
 name: Generate Technitium Blocklist
 on:
   schedule:
-    - cron: '0 2 * * *'  # Daily at 2 AM UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
   push:
     paths:
       - 'blocklist.txt'
       - 'whitelist.txt'
-      - 'convert-list.sh'
 
 jobs:
   convert:
@@ -23,20 +22,12 @@ jobs:
           chmod +x convert-list.sh
           bash convert-list.sh
           
-      - name: Check for changes
-        id: check_changes
-        run: |
-          if git diff --quiet technitium_blacklist.txt technitium_whitelist.txt; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-          
-      - name: Commit updated blocklist/whitelist
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add technitium_blacklist.txt technitium_whitelist.txt
-          git commit -m "🤖 Update Technitium blocklist/whitelist [skip ci]"
-          git push
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Update Technitium blocklist/whitelist [skip ci]"
+          file_pattern: 'technitium_blacklist.txt technitium_whitelist.txt'
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          skip_fetch: false
+          skip_checkout: false
