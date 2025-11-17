@@ -13,20 +13,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Ensure output files exist
-        run: |
-          touch technitium_blacklist.txt technitium_whitelist.txt
-
       - name: Set up bash
         run: sudo apt-get update && sudo apt-get install -y grep
 
       - name: Run conversion script
-        run: bash convert.sh
+        run: bash convert-list.sh
 
       - name: Commit updated blocklist/whitelist
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add technitium_blacklist.txt technitium_whitelist.txt
+          # Add files, even if they are new/untracked
+          git add --intent-to-add technitium_blacklist.txt technitium_whitelist.txt
+          # Commit only if there are changes
           git commit -m "Update Technitium blocklist/whitelist" || echo "No changes"
           git push
