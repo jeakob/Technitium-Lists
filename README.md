@@ -1,4 +1,4 @@
-# Technitium ✅
+# Technitium Whitelist & Blacklist ✅↔️❌
 
 ![Files](https://img.shields.io/github/directory-file-count/jeakob/Technitium-Lists?style=for-the-badge)
 ![Size](https://img.shields.io/github/repo-size/jeakob/Technitium-Lists?style=for-the-badge)
@@ -52,3 +52,4 @@ I will update this repo infrequently and sporadically.
 ## Usage 💚
 
 See [USAGE.md](https://github.com/jeakob/Technitium-Lists/blob/main/USAGE.md) for more information.
+
