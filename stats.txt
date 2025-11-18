@@ -1,6 +1,6 @@
 Blocklist Generation Statistics
 ================================
-Generated: 2025-11-17 12:04:53 UTC
+Generated: 2025-11-18 03:18:33 UTC
 Source: blocklist_urls.txt
 
 Download Statistics:
@@ -10,7 +10,7 @@ Download Statistics:
 - Success rate: 100.0%
 
 Output:
-- Unique domains: 1520290
+- Unique domains: 1520159
 - Output file: combined_blocklist.txt
 
 Failed URLs:
